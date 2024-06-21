@@ -4,7 +4,10 @@ import pandas as pd
 import numpy as np 
 import streamlit as st 
 
-st.radio("st.radio",["A","B","C"])
+x = st.radio("st.radio",["A","B","C"])
+if x=='A':
+    print("you chose A")
+
 st.checkbox("st.checkbox")
 st.multiselect("multiselect",['A','B','C']) 
 st.slider("slider",min_value=0., max_value=1., step=0.05)
